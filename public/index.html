@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+        #matchList {
+            list-style: none;
+            padding: 5px;
+            margin: 10px 0;
+            width: 200px;
+        }
+        #matchList > li {
+            border-bottom: 1px dotted;
+        }
+        #matchList > li:last-child {
+            border-bottom: none;
+        }
+    </style>
+  </head>
+  <body>
+
+    <ul id="msgList"></ul>
+
+    <form action="" id="form">
+      <input id="msg" type="text" autocomplete="off" />
+      <input type="submit" value="送信" />
+    </form>
+
+    <ul id="matchList"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
